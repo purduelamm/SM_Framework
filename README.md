@@ -40,7 +40,16 @@ This repository has been tested on [Windows 11](https://www.microsoft.com/en-us/
 
 ## How to Run
 
+`importls.py` uploads a .ls file containing series of commands that a robot should execute to controller using FTP protocol. Then, `faroc_main.py` should be run
+to actually set values of the waypoints in positions registers, which will be called by each command line in .ls file. 
+
+> [!NOTE]
+Waypoints that a robot follows can be created by [IK-MPC](https://github.com/purduelamm/IK-MPC) or other motion planning frameworks.
+
+    python3 importls.py 
+    python3 faroc_main.py
+
 ## ToDo Lists
 
-| **Documentation** | ![Progress](https://geps.dev/progress/40) |
+| **Documentation** | ![Progress](https://geps.dev/progress/60) |
 | --- | --- |

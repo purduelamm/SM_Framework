@@ -5,7 +5,7 @@
 # SM_Framework
 CESMII Project: Interface for bi-directional communication between FANUC and desktop PC. This project aims for building an intuitive interfance for users with limited experience of customized robot programming language (e.g., KAREL) to quickly plan, analyze, and verify robotic automation such as machine tending and palletization. 
 
-**This repository only contains Robot - PC Interface of the SM Framework. To fully build the framework, users require to download [IK-MPC](https://github.com/purduelamm/IK-MPC) AND DT-Interface.**
+**This repository only contains Robo + PC Interface of the SM Framework. To fully build the framework, users require to download [IK-MPC](https://github.com/purduelamm/IK-MPC) AND DT-Interface.**
 
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 

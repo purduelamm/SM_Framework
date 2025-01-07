@@ -19,6 +19,20 @@ class FTP_uploader():
         self.port = port
         self.user = user
         self.passwd = passwd
+    def from_wp(self, root_dir, filename, num_pr):
+        #generate .ls file corresponding to the number of waypoints
+        file = open(f"{root_dir}/myfile.ls", "w")
+        L = ["/PROG  MOVE_COMMAND \n", "/ATTR \n", "/APPL \n", "/MN \n"]
+        
+        vel_idx, cnt_idx, acc_idx = 81, 83, 82
+
+        for i in range(1, num_pr + 1):
+            pr = f"   {i}:   J PR[{i}] R[{vel_idx}:FANUC_VEL]% CNT R[{cnt_idx}:FANUC_CNT] ACC R[{acc_idx}]    ; \n"
+            L.append(pr)
+        
+        L.extend(["/POS \n", "/END \n"]) # \n is placed to indicate EOL (End of Line)
+        file.writelines(L)
+        file.close()
     def upload_ftp(self, filename, file_path):
         try:
             ftp = FTP(timeout=30) # Robot IP

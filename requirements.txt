@@ -1,0 +1,4 @@
+opcua
+pandas
+pymysql
+Requests

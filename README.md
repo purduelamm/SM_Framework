@@ -23,7 +23,7 @@ CESMII Project: Interface for bi-directional communication between FANUC and des
 ## Download Process
 
 > **Note**
-This repository has been tested on Windows 11 and [Ubuntu 22.04](https://releases.ubuntu.com/jammy/).
+This repository has been tested on [Windows 11](https://www.microsoft.com/en-us/software-download/windows11) and [Ubuntu 22.04](https://releases.ubuntu.com/jammy/).
 
     git https://github.com/purduelamm/SM_Framework.git
     cd SM_Framework/

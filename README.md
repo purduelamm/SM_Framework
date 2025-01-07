@@ -1,5 +1,5 @@
 # SM_Framework
-CESMII Project: Interface for bi-directional communication between FANUC and desktop PC
+CESMII Project: Interface for bi-directional communication between FANUC and desktop PC. This project aims for building an intuitive interfance for users with limited experience of customized robot programming language (e.g., KAREL) to au 
 
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 
